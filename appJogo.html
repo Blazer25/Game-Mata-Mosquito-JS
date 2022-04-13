@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mata Mosquito</title>
+
+    <!-- Ícone -->
+    <link rel="shortcut icon" href="assets/img/mosquito.png" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/estiloJogo.css">
+
+    <!-- Script -->
+    <script src="assets/js/scriptJogo.js"></script>
+
+</head>
+<!-- onresize irá informar o tamanho de tela -->
+
+<body onresize="ajustaTamanhoTela()">
+
+    <div class="painel">
+        <div class="vidas">
+            <img src="assets/img/coracao_cheio.png" id="vida1">
+            <img src="assets/img/coracao_cheio.png" id="vida2">
+            <img src="assets/img/coracao_cheio.png" id="vida3">
+        </div>
+
+        <div class="cronometro">
+            Tempo Restante: <span id="cronometro"></span>
+        </div>
+        <div class="cronometro">
+            Pontuação: <span id="pontuacao"></span>
+        </div>
+    </div>
+
+    <script>
+        //Atribuição do tempo e pontuacao diretamente na tag span
+        document.getElementById('cronometro').innerHTML = tempo
+        document.getElementById('pontuacao').innerHTML = pontuacao
+        //A cada 3s ele irá gerar um novo mosquito
+       setInterval(() => {
+            //chamando a função que gera a posição do mosquito e o cria no HTML
+            posicaoRandomicaMosquito()
+        }, criaMosquitoTempo);
+        console.log(criaMosquitoTempo)
+
+    </script>
+
+</body>
+
+</html>
