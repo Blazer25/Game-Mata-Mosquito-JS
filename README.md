@@ -1,0 +1,2 @@
+# Game-Mata-Mosquito-JS
+Jogo Mata Mosquito feito principalmente com JavaScript puro, nele é possível escolher a dificuldade do jogo (fácil, médio e difícil) e assim que for iniciado, basta clicar nos mosquitos que irão aparecer na tela,  o tempo de jogo é de 20 segundos, a derrota no jogo é dada quando 4 mosquitos não são mortos (clicados) e a vitória é dada quando o tempo de 20 segundos foi ultrapassado sem mais de 3 mosquitos não terem sidos clicados.
